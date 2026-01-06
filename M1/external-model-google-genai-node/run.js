@@ -5,8 +5,8 @@ dotenv.config();
 
 const API_KEY = process.env.GEMINI_API_KEY;
 
-const maskedKey = API_KEY 
-    ? API_KEY.substring(0, 4) + '...' + API_KEY.substring(API_KEY.length - 4) 
+const maskedKey = API_KEY
+    ? API_KEY.substring(0, 4) + '...' + API_KEY.substring(API_KEY.length - 4)
     : 'NOT SET';
 console.log(`env var "GEMINI_API_KEY" is: ${maskedKey}`);
 
@@ -50,9 +50,10 @@ async function run() {
                 }
             },
         });
-
-        console.log("Gandalf's answer:");
-        console.log(response.text);
+        console.log("User: ", conversationHistory[conversationHistory.length - 1].parts[0].text);
+        console.log('Prompt token count: ', response.usageMetadata.promptTokenCount)
+        console.log("Assistant:", response.text);
+        console.log('Total token count: ', response.usageMetadata.totalTokenCount);
 
     } catch (error) {
         console.error("An error occurred:", error.message);
