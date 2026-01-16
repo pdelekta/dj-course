@@ -1,14 +1,19 @@
 import os
-import json
+from pathlib import Path
 from tokenizers import Tokenizer
+from typing import TypedDict, List
 
-TEXT_TO_TOKENIZE = "Witaj Świecie, co cię w plecy gniecie? Spacje są kluczowe!" 
-TOKENIZER_PATH = "tokenizers/custom_bpe_tokenizer.json"
+class TextToTokenize(TypedDict):
+    title: str
+    text: str
+
+TEXTS_TO_TOKENIZE: List[TextToTokenize] = [{ "title": "Pan Tadeusz", "text": Path("../korpus-wolnelektury/pan-tadeusz-ksiega-1.txt").read_text()}, { "title": "The Pickwick Papers", "text": Path("../korpus-mini/the-pickwick-papers-gutenberg.txt").read_text()}, { "title": "Fryderyk Chopin" ,"text": Path("../korpus-mini/fryderyk-chopin-wikipedia.txt").read_text()}]
+TOKENIZER_PATH = "tokenizers/tokenizer-all-corpora.json"
 
 def visualize_tokens_with_gaps(text: str, encoding):
     tokens = encoding.tokens
     offsets = encoding.offsets
-    
+
     print("\n" + "="*50)
     print(f"Oryginalny Tekst: '{text}'")
     print("="*50)
@@ -19,13 +24,13 @@ def visualize_tokens_with_gaps(text: str, encoding):
     for i in range(len(tokens)):
         token = tokens[i]
         start, end = offsets[i]
-        
+
         if start > last_end_index:
             gap = text[last_end_index:start]
             visualized_sequence.append(f"[GAP:'{gap}']")
-        
+
         display_token = token
-        if token.startswith(' '): 
+        if token.startswith(' '):
             display_token = f"TOKEN_BPE:'{token.lstrip(' ')}'"
         elif token.startswith('##'):
             display_token = f"TOKEN_WP_CONT:'{token.lstrip('##')}'"
@@ -56,17 +61,20 @@ def main():
     except Exception as e:
         print(f"Błąd podczas ładowania tokenizera: {e}")
         return
-    
-    # Tokenizacja tekstu
-    encoding = tokenizer.encode(TEXT_TO_TOKENIZE)
-    
-    # Wstępne wypisanie wyników
-    print(f"\nWyniki Tokenizacji:")
-    print(f"Tokeny: {encoding.tokens}")
-    print(f"Offsets: {encoding.offsets}")
-    
+
+    # Tokenizacja tekstów
+
+    print(f"\nTokenizacja tekstów z wykorzystaniem tokenizera '{TOKENIZER_PATH.split('/')[-1]}':")
+    for text in TEXTS_TO_TOKENIZE:
+        encoding = tokenizer.encode(text["text"])
+        # Wstępne wypisanie wyników
+        print(f"\nWyniki Tokenizacji dla {text['title']}:")
+        print(f"Tokeny: {len(encoding.tokens)}")
+        # print(f"Offsets: {len(encoding.offsets)}")
+
+
     # Użycie funkcji wizualizującej
-    visualize_tokens_with_gaps(TEXT_TO_TOKENIZE, encoding)
+    # visualize_tokens_with_gaps(TEXT_TO_TOKENIZE, encoding)
 
 if __name__ == "__main__":
     main()
