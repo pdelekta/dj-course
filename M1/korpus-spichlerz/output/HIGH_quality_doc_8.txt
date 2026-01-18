@@ -1,0 +1,7 @@
+Alkiny (zwyczajowo: acetyleny) – grupa organicznych związków chemicznych będących węglowodorami nienasyconymi, w których występuje jedno wiązanie potrójne między atomami węgla ().
+Najprostszym alkinem jest etyn, zwykle zwany acetylenem, . Alkiny są bardziej reaktywne od alkanów i alkenów, są nietrwałe i podlegają wielu samorzutnym reakcjom. Ogólny wzór alkinów: . Alkiny, tak jak wszystkie węglowodory, ulegają reakcjom spalania.
+Nazewnictwo.
+Nazwy alkinów są tworzone z nazw odpowiednich alkanów. Z nazwy alkanu mającego ten sam szkielet węglowy usuwa się końcówkę „-an” i dodaje końcówkę „-yn” (lub „-in” po spółgłoskach ch, f, g, k, l), a przed nią umieszcza się lokant wskazujący, przy którym atomie węgla występuje potrójne wiązanie – na przykład „heksan” i „heks-2-yn”.
+Łańcuch główny (od którego pochodzi zasadniczy człon nazwy) musi zawierać wiązanie potrójne i być najdłuższy z możliwych. Atomy węgla numeruje się tak, aby wiązanie potrójne miało jak najmniejszy numer, bez względu na inne podstawniki. Jeżeli w węglowodorze występuje wiązanie podwójne i potrójne, ważniejsze przy nazewnictwie jest podwójne.
+Lokant można pominąć, gdy jest on równy 1, to znaczy wiązanie potrójne występuje na początku szkieletu węglowego.
+W literaturze spotyka się też stare nazewnictwo, różniące się od obecnego tym, że lokanty występują przed nazwą, na przykład „2-heksyn”.

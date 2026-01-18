@@ -1,0 +1,12 @@
+American National Standards Institute ("ANSI") – instytucja ustalająca normy techniczne obowiązujące w USA.
+Historia.
+ANSI powstała w 1918 roku. Początkowo działała pod nazwą "American Engineering Standards Committee" (AESC), w 1928 roku zmieniła nazwę na "American Standards Association" (ASA). W 1966 roku ASA została zreorganizowana i otrzymała nazwę "United States of America Standards Institute" (USASI). Nazwa obecna, czyli ANSI (ang. "American National Standards Institute") jest noszona przez tę instytucję od 1969 roku.
+Status prawny.
+W odróżnieniu od innych tego rodzaju instytucji w innych krajach, ANSI nie jest agencją rządową i nie posiada żadnych własnych „mocy prawnych” do egzekwowania ustalonych przez siebie norm. Jej działalność jest jednak silnie sprzężona z władzami USA, które zwykle honorują ustalenia ANSI i wiele norm ANSI jest włączanych do powszechnie obowiązujących aktów prawa; nie dzieje się to jednak automatycznie.
+ANSI jest prywatną, pozarządową instytucją "non-profit". Może należeć do niej i mieć wpływ na jej działania każda firma i instytucja działająca legalnie w USA, a także instytucje i firmy spoza USA. Aktualnie należy do niej ponad 1000 rozmaitych instytucji i firm.
+Działalność.
+ANSI zajmuje się wszelkimi normami technologicznymi od norm ustalających skład asfaltu na drogach po obowiązujący sposób kodowania liter w komputerach. Ustalanie norm odbywa się w zespołach roboczych, w których uczestniczyć mogą wszyscy zainteresowani członkowie ANSI. Normy zatwierdza przez głosowanie "ANSI’s Board Committee for Conformity Assessment", w której zasiada po jednym przedstawicielu z każdej zrzeszonej organizacji.
+Rozpoczęcie prac nad nową normą lub zmianę starej może proponować:
+ANSI, oprócz ustalania norm wewnątrzkrajowych, stara się też wpływać na kształt norm międzynarodowych ISO poprzez członkostwo w tej organizacji. Często jej "International Conformity Assessment Committee" zajmuje się także sporami z europejskimi i japońskimi instytucjami normalizacyjnymi w sprawie ustalania wspólnych norm międzynarodowych.
+Strony kodowe ANSI.
+Microsoft używa określenia „strony kodowe ANSI” (ang. „"ANSI code page"”) na określenie 8-bitowych stron kodowych używanych przez interfejs graficzny Windows i starsze aplikacje. Określenie to jest mylące, gdyż te strony kodowe nie są normowane przez ANSI, w rzeczywistości niektóre z nich są częściowo (w różnym stopniu) zgodne z kodowaniami ISO 8859.

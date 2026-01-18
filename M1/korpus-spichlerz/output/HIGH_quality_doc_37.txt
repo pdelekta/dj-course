@@ -1,0 +1,30 @@
+Antybiotyki (z , ' „przeciw” i , ' „życie”) – naturalne wtórne produkty metabolizmu mikroorganizmów, które działając wybiórczo w niskich stężeniach wpływają na struktury komórkowe lub procesy metaboliczne innych mikroorganizmów, hamując ich wzrost i podziały. Antybiotyki są przedmiotem badań auksanografii, stosuje się je jako środki w leczeniu wszelkiego rodzaju zakażeń bakteryjnych. Bywają także używane profilaktycznie w zapobieganiu zakażeniom bakteryjnym w przypadku osłabienia odporności, na przykład neutropenii, a także w profilaktyce bakteryjnego zapalenia wsierdzia.
+Pochodzenie słowa.
+Nazwa odwołuje się do zabójczego dla żywych bakterii działania antybiotyków. Naukowcy wiedzieli już w XIX wieku, że niektóre organizmy przeciwdziałają rozwojowi bakterii. Zjawisko to nazwano antybiozą.
+Historia.
+Odkrycie pierwszego antybiotyku (penicyliny) zostało dokonane w 1928 roku przez Alexandra Fleminga, który zauważył, że przypadkowe zanieczyszczenie podłoża pleśnią ' powstrzymuje wzrost kultur bakterii z rodzaju '.
+Oprócz pleśni zdolnością wytwarzania antybiotyków wyróżniają się promieniowce i niektóre bakterie.
+Wkrótce po odkryciu penicyliny pojawiły się następne antybiotyki: naturalne, półsyntetyczne i syntetyczne. Wprowadzenie antybiotyków do lecznictwa było przełomem dającym lekarzom oręż do walki z chorobami zakaźnymi, które do tej pory były przyczyną śmierci i chorób setek milionów osób.
+Pod względem budowy chemicznej antybiotyki należą do różnych grup związków organicznych. Z tysięcy naturalnie występujących antybiotyków zaledwie kilkadziesiąt mogło być włączonych do leczenia ludzi i zwierząt. Pozostałe nie znajdują zastosowania w medycynie ze względu na toksyczność lub działania niepożądane.
+Mechanizm działania.
+Działanie antybiotyków polega na powodowaniu śmierci komórki bakteryjnej (działanie bakteriobójcze) lub wpływaniu w taki sposób na jej metabolizm, aby ograniczyć jej możliwości rozmnażania się (działanie bakteriostatyczne).
+Leczenie chorób zakaźnych polega na zabiciu mikroorganizmów wywołujących chorobę. Trudność terapii, z którą borykali się lekarze przed erą antybiotyków polegała na tym, żeby znaleźć środek jednocześnie zabójczy dla chorobotwórczych bakterii i bezpieczny dla gospodarza.
+Antybiotyki zazwyczaj zakłócają procesy metaboliczne mikroorganizmów. Podstawą terapii antybiotykami jest zasada selektywnej toksyczności Ehrliha, zgodnie z którą antybiotykiem jest substancja, która w organizmie, w stężeniu nie wykazującym większej toksyczności dla ludzi i zwierząt wyższych, powoduje uszkodzenie lub śmierć mikroorganizmów. Można to osiągnąć przez stosowanie substancji oddziałujących na takie struktury, które są obecne w komórkach mikroorganizmów, a których nie ma w organizmie człowieka lub występują w nim w innej formie.
+Główne mechanizmy działania antybiotyków to:
+Osobnym problemem jest szkodliwość dla naturalnej flory bakteryjnej człowieka.
+Podział.
+Antybiotyki
+Leki przeciwprątkowe (leczenie zakażeń wywołanych przez prątki – np. gruźlicy):
+Leki przeciwgrzybicze:
+Antybiotyki można podzielić również według innych kryteriów, mających większe znaczenie ze względu na zastosowanie antybiotyków w terapii. Leki te różnią się między innymi:
+Działania niepożądane.
+Antybiotyki są lekami względnie mało toksycznymi, ich właściwości toksyczne są znacznie większe w stosunku do mikroorganizmu niż do organizmu gospodarza. Niemniej, niektóre antybiotyki mogą wywoływać działania niepożądane. Wyróżniamy trzy główne grupy niepożądanych działań antybiotyków:
+Oporność na antybiotyki.
+Oporność na antybiotyki jest cechą pewnych szczepów bakteryjnych, która umożliwia im przetrwanie w obecności antybiotyku. W zależności od pochodzenia, dzieli się ją na pierwotną (naturalna struktura bakterii uniemożliwiająca działanie leku) lub nabytą – na skutek nabycia genów oporności od innych bakterii lub spontanicznych mutacji. Częsta oporność wśród bakterii wiąże się z nieracjonalną antybiotykoterapią oraz zbyt dużym zużyciem tych leków w przemyśle spożywczym. W wielu krajach (np. USA) legalne jest też stosowanie niewielkich dawek antybiotyków podczas hodowli dla podniesienia masy trzody chlewnej. Dawki te są zbyt małe, aby zabić wszystkie bakterie, świetnie więc stymulują wyrobienie przez bakterie antybiotykooporności.
+Wytwarzanie antybiotyków.
+Naturalne antybiotyki są produkowane przez niektóre gatunki grzybów, szczególnie pleśni "", oraz przez niektóre bakterie, np. z rzędu promieniowców. Syntetyzowane w ich organizmach antybiotyki nie są szkodliwe dla nich samych dzięki licznym mechanizmom obronnym.
+Zdolność do wytwarzania antybiotyków jest ewolucyjnym przystosowaniem organizmów do życia w środowisku naturalnym. Daje posiadającym ją mikroorganizmom przewagę nad innymi, utrudniając wrażliwym szczepom wzrost i tym samym uniemożliwia im konkurowanie w walce o dostęp do pożywienia.
+Produkcja przemysłowa.
+Przemysł medyczny koncentruje się na wytwarzaniu antybiotyków półsyntetycznych:
+Niektóre antybiotyki uzyskuje się na skalę przemysłową metodami syntezy chemicznej. Wiele z nich jest produkowanych metodami biotechnologicznymi w wielkich fermentorach (bioreaktorach) o pojemności ok. 50 do 300 m³. W bioreaktorach przeprowadza się reakcje biosyntezy antybiotyków naturalnych przez odpowiednie mikroorganizmy oraz reakcje biotransformacji. Biotransformacja (w syntezie antybiotyków) polega na przekształceniu jednych związków chemicznych (substratów) w inne (produkty) za pomocą enzymów formie czystej, mikroorganizmów lub komórek organizmów wyższych.
+Produkt, jaki możemy otrzymać z danego substratu, zależy od wielu czynników. Najważniejsze z nich to:

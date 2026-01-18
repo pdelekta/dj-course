@@ -1,0 +1,5 @@
+ASP (ang. "Active Server Pages") – technologia firmy Microsoft służąca tworzeniu dynamicznych stron WWW wykonywanych po stronie serwera, oparta na jednym z dostępnych języków skryptowych.
+Dokumenty ASP składają się z dwóch elementów:
+Kod programu może być napisany w jednym z akceptowalnych przez ASP języków skryptowych (domyślnie wspierane oznaczone czcionką wytłuszczoną):
+Szereg dodatkowych można uzyskać przez doinstalowanie niezależnych silników skryptowych dostarczanych w postaci rozszerzeń "Active Scripting".
+Przeważająca większość stron ASP jest tworzona przy wykorzystaniu języka VBScript, skutecznie promowanego przez Microsoft jako najlepszego do tego celu. Strony ASP mają domyślnie skojarzone rozszerzenie.asp. Następcą tej techniki jest ASP.NET, czyli technika tworzenia dynamicznych stron internetowych po stronie serwera, działająca w oparciu o technikę .NET i kod zarządzany.

@@ -1,0 +1,12 @@
+ActiveX – przestarzała biblioteka komponentów i kontrolek stworzona przez Microsoft. ActiveX mógł służyć do wymiany danych pomiędzy różnymi aplikacjami działającymi pod kontrolą systemów operacyjnych Windows. W szczególności był wykorzystywany w przeglądarce Internet Explorer do wywoływania różnych funkcji systemowych (np. do wsparcia AJAX). Wsparcie dla ActiveX zostało wycofane w 2015 w przeglądarce Microsoft Edge.
+ActiveX wywodzi się z wcześniejszych technologii Microsoftu – OLE i COM. ActiveX jest zaprojektowana jako technologia modularna.
+Z technologicznego punktu widzenia, kontrolki ActiveX są podzbiorem komponentów typu COM.
+Kontrolki ActiveX mają swój początek w komponentach VBX, na bazie których stworzono kontrolki OCX, nazwane później ActiveX.
+Wykorzystanie.
+Z technologii tej korzystały kontrolki ActiveX, służące do uruchamiania aplikacji osadzonych w interfejsie użytkownika, na przykład na formie na stronie WWW (jako aplet).
+Niektóre obiekty można było również używać bardziej bezpośrednio w JavaScript (właściwie JScript). W szczególności w IE5 w ramach biblioteki MSXML udostępniono dostęp do asynchronicznego wywołania żądań (później element technologii AJAX, który został ustandaryzowany jako XMLHttpRequest).
+W Delphi pewne specyficzne komponenty ActiveX będące kontenerami złożonymi z innych kontrolek określane są mianem "ActiveForm". Komponenty typu ActiveForm (jak również ActiveX) mogą zostać osadzone na stronie www programu Internet Explorer (czyniąc ją jednak niedostępną dla użytkowników innych przeglądarek).
+Alternatywy.
+Technologia ActiveX jako taka nie została zaimplementowana w żadnej innej przeglądarce, nawet w nowej przeglądarce Microsoftu. Microsoft ostrzegał również przed używaniem ActiveX w IE11, ponieważ technologię można było wykorzystać do zbierania danych o komputerze lub do uszkodzenia go.
+Microsoft zmienił rodzaj głównej technologii dla kontrolek tworząc środowisko .NET. Kontrolki Windows Forms wyparły ActiveX, ale częściowe wsparcie dla ActiveX zostało zachowane przynajmniej do wersji 4.x.
+W przeglądarkach różne rodzaje kontrolek zostały ustandaryzowana w ramach HTML5. Wcześniej już pojawił się obiekt XHR zastępujący żądania AJAX przez ActiveX, a w 2015 roku w Chrome i w Firefox zaimplementowane zostało nowe Fetch API.

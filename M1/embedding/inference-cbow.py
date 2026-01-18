@@ -1,37 +1,12 @@
+
 import numpy as np
-import json
-import logging
 from gensim.models import Word2Vec
 from tokenizers import Tokenizer
-import os
-import glob
-# import z corpora (zakładam, że jest to plik pomocniczy)
-from corpora import CORPORA_FILES # type: ignore 
-
-# Ustawienie logowania dla gensim
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-
-# --- KONFIGURACJA ŚCIEŻEK I PARAMETRÓW ---
-# files = CORPORA_FILES["WOLNELEKTURY"]
-# files = CORPORA_FILES["PAN_TADEUSZ"]
-files = CORPORA_FILES["ALL"]
-
-TOKENIZER_FILE = "../tokenizer/tokenizers/custom_bpe_tokenizer.json"
-# TOKENIZER_FILE = "../tokenizer/tokenizers/bielik-v1-tokenizer.json"
-# TOKENIZER_FILE = "../tokenizer/tokenizers/bielik-v3-tokenizer.json"
-
-OUTPUT_TENSOR_FILE = "embedding_tensor_cbow.npy"
-OUTPUT_MAP_FILE = "embedding_token_to_index_map.json"
-OUTPUT_MODEL_FILE = "embedding_word2vec_cbow_model.model"
-
-# Parametry treningu Word2Vec (CBOW)
-VECTOR_LENGTH = 20
-WINDOW_SIZE = 6
-MIN_COUNT = 2         
-WORKERS = 4           
-EPOCHS = 20          
-SAMPLE_RATE = 1e-2
-SG_MODE = 0 # 0 dla CBOW, 1 dla Skip-gram
+from M1.embedding.embedding_cbow_config import (
+    TOKENIZER_FILE,
+    MIN_COUNT,
+    OUTPUT_MODEL_FILE
+    )
 
 try:
     print(f"Ładowanie tokenizera z pliku: {TOKENIZER_FILE}")
@@ -40,73 +15,12 @@ except FileNotFoundError:
     print(f"BŁĄD: Nie znaleziono pliku '{TOKENIZER_FILE}'. Upewnij się, że plik istnieje.")
     raise
 
-# loading r& aggregating aw sentences from files
-def aggregate_raw_sentences(files):
-    raw_sentences = []
-    print("Wczytywanie tekstu z plików...")
-    print(f"Liczba plików do wczytania: {len(files)}")
-    for file in files:
-        try:
-            with open(file, 'r', encoding='utf-8') as f:
-                lines = [line.strip() for line in f if line.strip()]
-                raw_sentences.extend(lines)
-        except FileNotFoundError:
-            print(f"OSTRZEŻENIE: Nie znaleziono pliku '{file}'. Pomijam.")
-            continue
-
-    if not raw_sentences:
-        print("BŁĄD: Pliki wejściowe są puste lub nie zostały wczytane.")
-        exit()
-    return raw_sentences
-
-raw_sentences = aggregate_raw_sentences(files)
-
-# Tokenizacja całej partii zdań przy użyciu tokenizera BPE
-print(f"Tokenizacja {len(raw_sentences)} zdań...")
-encodings = tokenizer.encode_batch(raw_sentences)
-
-# Konwersja obiektów Encoding na listę list stringów (tokenów)
-tokenized_sentences = [
-    encoding.tokens for encoding in encodings
-]
-print(f"Przygotowano {len(tokenized_sentences)} sekwencji do treningu.")
-
-# --- ETAP 2: Trening Word2Vec (CBOW) ---
-
-print("\n--- Rozpoczynanie Treningu Word2Vec (CBOW) ---")
-model = Word2Vec(
-    sentences=tokenized_sentences,
-    vector_size=VECTOR_LENGTH,
-    window=WINDOW_SIZE,
-    min_count=MIN_COUNT,
-    workers=WORKERS,
-    sg=SG_MODE,  # 0: CBOW
-    epochs=EPOCHS,
-    sample=SAMPLE_RATE,
-)
-print("Trening zakończony pomyślnie.")
-
-# --- ETAP 3: Eksport i Zapis Wyników ---
-
-# Eksport tensora embeddingowego
-embedding_matrix_np = model.wv.vectors
-embedding_matrix_tensor = np.array(embedding_matrix_np, dtype=np.float32)
-
-print(f"\nKształt finalnego tensora: {embedding_matrix_tensor.shape} (Tokeny x Wymiar)")
-
-# 1. Zapisanie tensora NumPy (.npy)
-np.save(OUTPUT_TENSOR_FILE, embedding_matrix_tensor)
-print(f"Tensor embeddingowy zapisany jako: '{OUTPUT_TENSOR_FILE}'.")
-
-# 2. Zapisanie mapowania tokenów na indeksy
-token_to_index = {token: model.wv.get_index(token) for token in model.wv.index_to_key}
-with open(OUTPUT_MAP_FILE, "w", encoding="utf-8") as f:
-    json.dump(token_to_index, f, ensure_ascii=False, indent=4)
-print(f"Mapa tokenów do indeksów zapisana jako: '{OUTPUT_MAP_FILE}'.")
-
-# 3. Zapisanie całego modelu gensim (opcjonalne, ale zalecane)
-model.save(OUTPUT_MODEL_FILE)
-print(f"Pełny model Word2Vec zapisany jako: '{OUTPUT_MODEL_FILE}'.")
+try:
+    print(f"Ładowanie modelu z pliku: {OUTPUT_MODEL_FILE}")
+    model = Word2Vec.load(OUTPUT_MODEL_FILE)
+except FileNotFoundError:
+    print(f"BŁĄD: Nie znaleziono pliku '{OUTPUT_MODEL_FILE}'. Uruchom run-cbow.py najpierw.")
+    raise
 
 # --- DODANA FUNKCJA: OBLICZANIE WEKTORA DLA CAŁEGO SŁOWA ---
 
@@ -114,9 +28,9 @@ def get_word_vector_and_similar(word: str, tokenizer: Tokenizer, model: Word2Vec
     # Tokenizacja słowa na tokeny podwyrazowe
     # Używamy .encode(), aby otoczyć słowo spacjami, co imituje kontekst w zdaniu
     # Ważne: tokenizator BPE/SentencePiece musi widzieć spację, by dodać prefiks '_'
-    encoding = tokenizer.encode(" " + word + " ") 
+    encoding = tokenizer.encode(" " + word + " ")
     word_tokens = [t.strip() for t in encoding.tokens if t.strip()] # Usuń puste tokeny
-    
+
     # Usuwamy tokeny początku/końca sekwencji, jeśli zostały dodane przez tokenizator
     if word_tokens and word_tokens[0] in ['[CLS]', '<s>', '<s>', 'Ġ']:
         word_tokens = word_tokens[1:]
@@ -125,7 +39,7 @@ def get_word_vector_and_similar(word: str, tokenizer: Tokenizer, model: Word2Vec
 
     valid_vectors = []
     missing_tokens = []
-    
+
     # 1. Zbieranie wektorów dla każdego tokenu
     for token in word_tokens:
         if token in model.wv:
@@ -152,7 +66,7 @@ def get_word_vector_and_similar(word: str, tokenizer: Tokenizer, model: Word2Vec
         positive=[word_vector],
         topn=topn
     )
-    
+
     return word_vector, similar_words
 
 # --- WERYFIKACJA UŻYCIA NOWEJ FUNKCJI ---
@@ -160,11 +74,11 @@ def get_word_vector_and_similar(word: str, tokenizer: Tokenizer, model: Word2Vec
 print("\n--- Weryfikacja: Szukanie podobieństw dla całych SŁÓW (uśrednianie wektorów tokenów) ---")
 
 # Przykłady, które wcześniej mogły nie działać
-words_to_test = ['wojsko', 'szlachta', 'choroba', 'król'] 
+words_to_test = ['wojsko', 'szlachta', 'choroba', 'król']
 
 for word in words_to_test:
     word_vector, similar_tokens = get_word_vector_and_similar(word, tokenizer, model, topn=10)
-    
+
     if word_vector is not None:
         print(f"\n10 tokenów najbardziej podobnych do SŁOWA '{word}' (uśrednione wektory tokenów {tokenizer.encode(word).tokens}):")
         # Wyświetlanie wektora (pierwsze 5 elementów)

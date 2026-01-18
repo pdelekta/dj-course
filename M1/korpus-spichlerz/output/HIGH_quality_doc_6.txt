@@ -1,0 +1,13 @@
+Alternatywa, suma logiczna, alternatywa zwykła, alternatywa nierozłączna, alternatywa łączna – zdanie logiczne o postaci "p lub q", gdzie "p", "q" są zdaniami. W logice matematycznej alternatywę zapisuje się formula_1 Alternatywa "p lub q" jest zdaniem prawdziwym, gdy co najmniej jedno z jej zdań składowych "p", "q" jest prawdziwe.
+W logice matematycznej.
+Alternatywa (suma logiczna):
+Alternatywa pozostaje w ścisłym związku z dodawaniem zbiorów (patrz algebra zbiorów). Dlatego zdanie utworzone z innych zdań przy użyciu alternatywy jest też nazywane sumą logiczną. Zdania składowe formula_12 formula_3 nazywane są składnikami alternatywy.
+Alternatywa jest prawdziwa, jeżeli co najmniej jeden z jej składników jest prawdziwy. W przeciwnym razie alternatywa zdań jest fałszywa.
+gdzie: 1 – zdanie prawdziwe; 0 – zdanie fałszywe
+Notacja.
+Zestawienie symboli alternatywy, stosowanych przez różnych autorów:
+W językach programowania dla oznaczenia alternatywy używany jest często angielski spójnik OR. W języku C/C++ i pochodnych oznacza się ją przez „||”.
+Własności.
+Alternatywa charakteryzuje się następującymi cechami:
+W języku naturalnym.
+Bardziej znane jest potoczne znaczenie słowa „alternatywa”: wybór z dwóch wykluczających się możliwości. Pokrywa się ono z matematycznym pojęciem alternatywy rozłącznej, a nie klasycznej alternatywy przedstawianej w logice matematycznej.

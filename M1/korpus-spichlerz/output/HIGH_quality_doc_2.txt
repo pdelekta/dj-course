@@ -1,0 +1,18 @@
+Alkeny – organiczne związki chemiczne z grupy węglowodorów nienasyconych, w których występuje jedno podwójne wiązanie chemiczne między atomami węgla (C=C). Razem ze związkami, które posiadają dwa lub więcej wiązań podwójnych (polienami, takimi jak dieny, trieny itd.) oraz z analogami pierścieniowymi (cykloalkenami i cyklopolienami) tworzą grupę olefin. Mają więcej izomerów i są bardziej aktywne niż alkany. Wraz ze zwiększającą się długością łańcucha węglowego maleje ich reaktywność. Można je otrzymać z ropy naftowej, a w laboratorium w reakcji eliminacji fluorowca z halogenków alkilowych lub przez dehydratację alkoholi. Ich wzór ogólny to "CnH2n".
+Nazewnictwo.
+Nazwy alkenów są tworzone z nazw odpowiednich alkanów. Z nazwy alkanu posiadającego ten sam szkielet węglowy usuwa się końcówkę "-an" i dodaje końcówkę "-en", przed którą umieszcza się lokant, wskazujący przy którym atomie węgla występuje podwójne wiązanie. Na przykład:
+Lokant można pominąć, gdy jest on równy 1 (wtedy, gdy wiązanie podwójne występuje na początku szkieletu węglowego).
+Nazewnictwo dienów i polienów jest tworzone analogicznie z odpowiednio większą liczbą lokantów i końcówką "-dien", "-trien", "-tetraen", itd. Na przykład:
+W literaturze spotyka się też stare nazewnictwo, które różni się od obecnie obowiązującego tym, że lokanty występują przed nazwą. Przykładowo:
+Izomeria.
+Alkeny o większej liczbie atomów węgla niż propen mogą istnieć w kilku formach izomerycznych na skutek rozgałęzienia łańcucha węglowego, zmiany umiejscowienia podwójnych wiązań chemicznych i występowaniu zjawiska izomerii geometrycznej. Eten i propen nie posiadają izomerów, a buten ma ich 4.
+Otrzymywanie.
+Alkeny otrzymuje się poprzez eliminację cząstki nieorganicznej z halogenopochodnych alkanów (dehydrohalogenacja) lub alkoholi (dehydratacja), w krakingu, bądź reakcji uwodornienia alkinów.
+Charakterystyczne reakcje.
+Alkeny są trwałymi związkami, które jednak są bardziej reaktywne od alkanów.
+Podlegają one m.in.: reakcjom polimeryzacji winylowej oraz
+reakcjom addycji np.: przyłączania gazowego chloru, chlorowodoru, wody.
+Przykładowa reakcja addycji chloru do etenu:
+Alkeny o większej ilości wiązań podwójnych.
+Alkeny z dwoma podwójnymi wiązaniami to dieny. Alkeny z więcej niż dwoma wiązaniami podwójnymi (trieny, tetraeny itd.) są ogólnie nazywane polienami.
+Dieny można podzielić na:

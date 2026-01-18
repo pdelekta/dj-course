@@ -1,0 +1,7 @@
+Akapit (łac. "a capite", od głowy, od początku) – podstawowy sposób dzielenia łamu na rozpoznawalne wzrokiem mniejsze fragmenty w celu zwiększenia czytelności tekstu. Podstawowa jednostka logiczna dłuższego tekstu, składająca się z jednego lub wielu zdań stanowiących pewną całość treściową (myśl). Zadaniem akapitu jest wyraźne zaznaczenie nowej myśli w bieżącym wątku wypowiedzi.
+Czasami jako synonimy akapitu są stosowane terminy ustęp, werset i paragraf, jednak mają one inne znaczenie.
+Zasady tworzenia akapitów.
+Akapity buduje się poprzez:
+Pierwszy wiersz akapitu to wiersz akapitowy, a ostatni to wiersz końcowy.
+Typowe błędy.
+Przy dzieleniu akapitu między sąsiednimi łamami (lub kolumnami) należy dbać, aby zarówno na początku, jak i na końcu akapitu znajdowały się co najmniej dwa wiersze tekstu. Najczęstszymi błędami pojawiającymi się podczas dzielenia tekstu są:

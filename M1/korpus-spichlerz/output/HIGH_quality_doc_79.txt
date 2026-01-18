@@ -1,0 +1,6 @@
+Alfabet Braille’a – alfabet umożliwiający zapisywanie i odczytywanie tekstów osobom niewidomym.
+Historia.
+Stworzony przez Louisa Braille’a, który w wyniku wypadku oślepł w dzieciństwie. Oparty jest na wojskowym systemie umożliwiającym odczytywanie rozkazów bez użycia światła. Jest jednym z pierwszych przykładów technologii asystujących. 
+Polska adaptacja systemu dostosowująca alfabet Braille’a do polskiego systemu fonetycznego opracowana została przez zakonnice Elżbietę Różę Czacką oraz Teresę Landy. Alfabet został oficjalnie przyjęty zarządzeniem Ministerstwa Wyznań Religijnych i Oświecenia Publicznego z 24 maja 1934 r.
+Budowa.
+Podstawą, z której wyprowadza się cały system Braille’a, jest sześciopunkt nazywany znakiem tworzącym. System składa się ze znaków będących kombinacją sześciu wypukłych punktów ułożonych w dwóch kolumnach po trzy punkty w każdej. Lewa kolumna zawiera umownie oznaczone punkty: 1,2,3, zaś prawą stanowią punkty: 4,5,6. Wzajemna kombinacja i rozmieszczenie punktów daje możliwość zapisu sześćdziesięciu trzech znaków. W brajlu można zapisać wszystko – istnieje kilka uzupełniających systemów zapisu brajlowskiego – notacje: matematyczna, chemiczna, fizyczna i muzyczna.

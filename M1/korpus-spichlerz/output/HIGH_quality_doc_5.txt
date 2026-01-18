@@ -1,0 +1,19 @@
+Association for Computing Machinery ("ACM") to największa na świecie społeczność ludzi nauki, nauczycieli i profesjonalistów zajmujących się informatyką. Nazwa w tłumaczeniu na język polski to "Stowarzyszenie dla Maszyn Liczących".
+Celem ACM jest rozwój nauki, sztuki oraz inżynierii i zastosowań IT poprzez dialog, integrację środowiska, promowanie wiedzy, tworzenie i promowanie etycznych i zawodowych standardów.
+Historia.
+ACM zostało utworzone 15 września 1947 roku w Nowym Jorku w trakcie serii spotkań na Uniwersytecie Columbia. Utworzenie stowarzyszenia było odpowiedzią na postęp informatyki. Artykuły i prace z tej dziedziny wcześniej były związane z matematyką, elektryką i innymi naukami.
+Specjaliści potrzebowali czasopism i innych zasobów do badań nad informatyką. Rosło też zapotrzebowanie na efekty takich badań.
+W trakcie dalszych spotkań na uczelniach MIT i Harvard postanowiono utworzyć czasopisma zajmujące się informatyką. Ustalono też ostateczną nazwę i kształt nowej organizacji. Formalnie statut stowarzyszenia został przedstawiony członkom w 1949 roku.
+Członkostwo.
+Członkowie w ACM dzielą się na studenckich i profesjonalnych. Studenccy członkowie to studenci studiów inżynierskich lub magisterskich informatyki lub kierunków pokrewnych.
+Członkowie profesjonalni to osoby dyplomujące się stopniem magistra lub wyższym w informatyce lub dziedzinach pokrewnych jak również osoby pracujące co najmniej od dwóch lat w branży IT jako specjaliści. Od 1993 r. wybitnie zasłużeni członkowie mogą otrzymać tytuł "ACM fellow". Wśród 500 naukowców z indeksem h wyższym niż 40, 199 to "ACM fellows".
+Organizacja.
+ACM jest kierowane przez radę 16 członków. W skład rady wchodzi prezes, wiceprezes, sekretar/skarbnik, poprzedni prezydent, prezydent "Special Governing Group Board", trzech członków "Special Governing Group Board" oraz 7 członków stowarzyszenia. Wewnątrz stowarzyszenia powoływane są komitety do różnych zadań. Prezesem jest Cherri M. Pancake. ACM zatrudnia też CEO – od 2018 roku jest to Vicki L. Hanson.
+Oddziały ACM dzielą się na studenckie zrzeszające studentów oraz profesjonalne do których należą absolwenci i profesjonaliści. Na świecie około 170 profesjonalnych i 500 studenckich oddziałów ACM znajduje się w USA, Europie i Azji. Do ACM należy około 90 000 osób. 
+Członkowie ACM mogą być dodatkowo zgrupowani w sekcjach – tzw. grupach szczególnych zainteresowań (ACM SIG – Special Interest Group).
+W Polsce istnieją obecnie trzy profesjonalne oddziały ACM. Pierwszy to "Poland ACM Chapter" przy Instytucie Informatyki Uniwersytetu Wrocławskiego, kierowany przez Leszka Pacholskiego. Drugi to Poland "ACM SIGCHI Chapter" przy Ośrodku Przetwarzania Informacji w Warszawie, kierowany przez Agnieszkę Szóstek. Trzeci to ACM Łódź Chapter przy Instytucie Informatyki Stosowanej Politechniki Łódzkiej, kierowany przez Andrzeja Romanowskiego.
+Działalność.
+ACM w szczególności grupy zainteresowań wewnątrz ACM organizują konferencję i wydają czasopisma.
+Organizacja wydaje około 35 czasopism poświęconych informatyce. Wśród nich są takie tytuły jak Communications of the ACM, Journal of the ACM czy Transaction of Algorithms. Czasopisma ACM należą do najbardziej cenionych i rozpoznawalnych czasopism z dziedziny IT na świecie.
+Wszystkie tytuły oraz referencję do czasopism innych wydawców są dostępne w internetowej bibliotece. ACM udostępnia też książki i kursy.
+Stowarzyszenie przyznaje liczne nagrody i wyróżnienia dla ludzi nauki w tym Nagrodę Turinga. Organizuje również Akademickie Mistrzostwa Świata w Programowaniu, które w roku 2012 odbyły się w Polsce.
