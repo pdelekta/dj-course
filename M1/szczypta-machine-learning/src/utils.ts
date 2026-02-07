@@ -26,7 +26,7 @@ export const fromJSONFile = (filepath: string) => {
   console.log(`Loaded from ${filepath}`);
   const data = JSON.parse(json);
 
-  const { WK_Matrix, WQ_Matrix, X_Input_Matrix } = data;
+  const { WK_Matrix, WQ_Matrix, X_Input_Matrix }: { WK_Matrix: Matrix, WQ_Matrix: Matrix, X_Input_Matrix: Matrix} = data;
   // SAFE READ: make sure all dimensions are compatible:
   assertMatricesCompatible(X_Input_Matrix, WK_Matrix);
   assertMatricesCompatible(X_Input_Matrix, WQ_Matrix);
