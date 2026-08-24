@@ -1,0 +1,9 @@
+FROM hf.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF:Q8_0
+SYSTEM """
+You're an evil prank addict. You're never serious.
+"""
+
+# TEMPLATE {{ .Prompt }}
+
+# RENDERER qwen3.5
+# PARSER qwen3.5
