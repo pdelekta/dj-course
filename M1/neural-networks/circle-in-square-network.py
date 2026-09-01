@@ -19,8 +19,8 @@ writer = SummaryWriter(LOG_DIR)
 class CircleInSquareNet(nn.Module):
     def __init__(self):
         super(CircleInSquareNet, self).__init__()
-        self.fc1 = nn.Linear(2, 2)
-        self.fc2 = nn.Linear(2, 1)
+        self.fc1 = nn.Linear(2, 20)
+        self.fc2 = nn.Linear(20, 1)
 
     def forward(self, x):
         x = nn.ReLU()(self.fc1(x))
@@ -47,7 +47,7 @@ def generate_circle_data(num_samples, radius=0.5):
     return X, Y
 
 # Generowanie danych
-NUM_SAMPLES = 10 # 🔥🔥🔥 PRACUJESZ TUTAJ
+NUM_SAMPLES = 100 # 🔥🔥🔥 PRACUJESZ TUTAJ
 X_circle, Y_circle = generate_circle_data(NUM_SAMPLES)
 
 # Inicjalizacja:
@@ -57,7 +57,7 @@ model2 = CircleInSquareNet()
 # model z sekcji 1
 
 # Krok 1: Definicja Parametrów
-LEARNING_RATE = 0.00001 # 🔥🔥🔥 PRACUJESZ TUTAJ
+LEARNING_RATE = 0.03 # 🔥🔥🔥 PRACUJESZ TUTAJ
 EPOCHS = 500 # 🔥🔥🔥 PRACUJESZ TUTAJ
 STEP = 100
 
@@ -105,7 +105,7 @@ with torch.no_grad():
     accuracy = (predicted_classes == Y_circle).sum().item() / NUM_SAMPLES * 100
 
     print(f"Dokładność na zbiorze treningowym: {accuracy:.2f}%")
-    
+
     if accuracy == 100:
         print("Good job! 🎉")
         MODEL_PATH = "circle_in_square_model_weights.pth"
@@ -113,7 +113,7 @@ with torch.no_grad():
         print(f"Model zapisany jako: {MODEL_PATH}")
     else:
         print("FIX ME PLEASE! 😟")
-    
+
 print(f"(run tensorboard/venv): tensorboard --logdir={LOG_DIR}")
 print(f"(run tensorboard/venv): tensorboard --logdir=runs")
 print("\nopen http://localhost:6006/; SCALARS - how loss changed over time; HISTOGRAMS - how gradients distributed over epochs")

@@ -42,7 +42,7 @@ class SimpleXORNet(nn.Module):
 model = SimpleXORNet()
 model_epochs = 0
 
-LEARNING_RATE = 0.5 # 🔥🔥🔥
+LEARNING_RATE = 0.48 # 🔥🔥🔥
 
 # BCELoss dla klasyfikacji binarnej (używamy go po Sigmoidzie)
 criterion = nn.BCELoss()
@@ -53,7 +53,7 @@ optimizer = optim.SGD(model.parameters(), LEARNING_RATE)
 ## 3. Przygotowanie Danych i Pętla Treningowa
 # Ważne: PyTorch oczekuje liczb zmiennoprzecinkowych dla wejść sieci.
 
-NUM_EPOCHS = 2000 # 🔥🔥🔥
+NUM_EPOCHS = 200 # 🔥🔥🔥
 
 # Dane wejściowe (4 pary: [0, 0], [0, 1], [1, 0], [1, 1])
 X = torch.tensor([[0., 0.], [0., 1.], [1., 0.], [1., 1.]])
@@ -79,7 +79,7 @@ for epoch in range(NUM_EPOCHS):
 
     model_epochs += 1
     # Logowanie postępów co 200 epok
-    if (epoch + 1) % 200 == 0:
+    if (epoch + 1) % 10 == 0:
         print(f'Epoka [{epoch+1}/{NUM_EPOCHS}, all: {model_epochs}], Strata (Loss): {loss.item():.6f}')
         # print(f'   outputs: {outputs.detach().numpy()}')
         writer.add_scalar('Loss', loss.item(), epoch)
@@ -108,7 +108,7 @@ with torch.no_grad():
     # Sprawdzenie użyteczności - czy się nauczyliśmy?
     accuracy = (predicted_classes == Y).sum().item() / len(Y)
     print(f"\nDokładność (Accuracy): {accuracy*100:.2f}%")
-    
+
 ## 5. Wyświetl model (strukturę i parametry)
 
 print("--- Struktura Sieci (Wbudowane print()) ---")
@@ -118,7 +118,7 @@ print("--- Parametry Modelu ---")
 for name, param in model.named_parameters():
     if param.requires_grad:
         print(f"- {name}:\n{param.data.numpy()}")
-        
+
 ## 6. Zapisz wagi do pliku
 
 # 1. Definicja ścieżki pliku
